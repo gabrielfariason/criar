@@ -79,9 +79,10 @@ em.s,h1 em,h2 em{font-family:var(--serif);font-style:italic;font-weight:400;lett
 @media (max-width:360px){.ticket .btn.buy{font-size:18px}}
 .offer li{display:block!important;position:relative;padding-left:24px}.offer li:before{position:absolute;left:0}.offer li .bn{position:relative;top:-1px}
 .lang{display:flex;gap:2px;background:var(--panel);border:1px solid var(--line2);border-radius:10px;padding:3px;margin-left:4px}
-.lang button{border:0;background:none;color:var(--mut);font:700 12px Poppins;padding:5px 9px;border-radius:7px;cursor:pointer;letter-spacing:.02em}
+.lang button{display:flex;align-items:center;gap:5px;border:0;background:none;color:var(--mut);font:700 12px Poppins;padding:5px 9px;border-radius:7px;cursor:pointer;letter-spacing:.02em}
+.lang svg{width:17px;height:12px;border-radius:2.5px;flex:none;box-shadow:0 0 0 1px rgba(255,255,255,.15)}
 .lang button.on{background:var(--lime);color:var(--ink)}
-@media (max-width:900px){.lang{margin-left:auto}.lang button{padding:6px 10px;font-size:12.5px}}
+@media (max-width:900px){.lang{margin-left:auto}.lang button{padding:6px 8px;font-size:12px;gap:4px}}
 /* nav */
 nav{position:sticky;top:0;z-index:50;background:rgba(14,17,10,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 nav .wrap{display:flex;align-items:center;height:62px;gap:20px}
@@ -295,7 +296,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 <body>
 <nav><div class="wrap">
 <a class="logo" href="#topo">CRI<b>.</b>AR<small data-t="t0">Editor Profissional no CLAUDE</small></a>
-<div class="lang" role="group" aria-label="Idioma"><button data-l="pt" class="on">PT</button><button data-l="es">ES</button><button data-l="en">EN</button></div>
+<div class="lang" role="group" aria-label="Idioma"><button data-l="pt" class="on" aria-label="Português"><svg viewBox="0 0 20 14" aria-hidden="true"><rect width="20" height="14" fill="#009C3B"/><path d="M10 1.6 18.2 7 10 12.4 1.8 7z" fill="#FFDF00"/><circle cx="10" cy="7" r="3.1" fill="#002776"/></svg>PT</button><button data-l="es" aria-label="Español"><svg viewBox="0 0 20 14" aria-hidden="true"><rect width="20" height="14" fill="#AA151B"/><rect y="3.5" width="20" height="7" fill="#F1BF00"/></svg>ES</button><button data-l="en" aria-label="English"><svg viewBox="0 0 20 14" aria-hidden="true"><rect width="20" height="14" fill="#fff"/><g fill="#B22234"><rect width="20" height="1.08"/><rect y="2.15" width="20" height="1.08"/><rect y="4.3" width="20" height="1.08"/><rect y="6.46" width="20" height="1.08"/><rect y="8.6" width="20" height="1.08"/><rect y="10.77" width="20" height="1.08"/><rect y="12.92" width="20" height="1.08"/></g><rect width="8.6" height="7.54" fill="#3C3B6E"/></svg>EN</button></div>
   <a class="navcta" data-t="t1" href="#oferta">Quero o CRI.AR</a>
 </div></nav>
 <header class="hero" id="topo"><div class="wrap hgrid">
